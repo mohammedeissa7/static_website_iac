@@ -4,7 +4,9 @@ tasks:
       source ./bin/set_tf_alias
       source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
+      cp /workspace/terraform-beginner-bootcamp-2023/terraform.tfvars.example /workspace/terraform-beginner-bootcamp-2023/terraform.tfvars
       cd /workspace/terraform-beginner-bootcamp-2023
+      
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial

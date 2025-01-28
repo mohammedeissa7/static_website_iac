@@ -1,0 +1,5 @@
+aws_access_key_id="*"
+aws_secret_access_key="*"
+bucket_name="eissa-tf-example-bucket"
+index_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/index.html"
+error_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/error.html"

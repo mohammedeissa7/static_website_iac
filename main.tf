@@ -1,21 +1,14 @@
-# provider "random" {
-#   # Configuration options
-# }
 
-# # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
-# resource "random_string" "bucket_name" {
-#   lower   = true
-#   upper   = false
-#   length  = 32
-#   special = false
-# }
-
-
-resource "aws_s3_bucket" "website_bucket" {
-
-  bucket = var.bucket_name
+provider "aws" {
+  region = "us-east-1"
+  access_key = var.aws_access_key_id
+  secret_key = var.aws_secret_access_key
 }
 
-# output "random_bucket_name" {
-#   value = random_string.bucket_name.result
-# }
+
+module "terrahouce_aws" {
+  source = "/workspace/terraform-beginner-bootcamp-2023/module/terrahouce_aws "
+  bucket_name = var.bucket_name
+  index_html_filepath = var.index_html_filepath
+  error_html_filepath = var.error_html_filepath
+}
