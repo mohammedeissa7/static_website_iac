@@ -3,5 +3,6 @@ aws_secret_access_key="*"
 bucket_name="eissa-tf-example-bucket"
 index_html_filepath="/workspace/static_website_iac/public/index.html"
 error_html_filepath="/workspace/static_website_iac/public/error.html"
-assets_path="/workspace/static_website_iac/public/assets"
-content_version=2
+assets_path="workspace/static_website_iac/public/assets"
+
+content_version= 3 
