@@ -4,8 +4,8 @@ tasks:
       source ./bin/set_tf_alias
       source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
-      cp /workspace/terraform-beginner-bootcamp-2023/terraform.tfvars.example /workspace/terraform-beginner-bootcamp-2023/terraform.tfvars
-      cd /workspace/terraform-beginner-bootcamp-2023
+      cp /workspace/static_website_iac/terraform.tfvars.example /workspace/static_website_iac/terraform.tfvars
+      cd /workspace/static_website_iac/
       
   - name: aws-cli
     env:
@@ -13,7 +13,7 @@ tasks:
     before: |
       source ./bin/set_tf_alias
       source ./bin/install_aws_cli
-      cd /workspace/terraform-beginner-bootcamp-2023
+      cd /workspace/static_website_iac/
 
 vscode:
   extensions:
