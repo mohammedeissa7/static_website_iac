@@ -14,6 +14,12 @@ tasks:
       source ./bin/set_tf_alias
       source ./bin/install_aws_cli
       cd /workspace/static_website_iac/
+ 
+  - name: http-server
+    before: |
+      npm install --global http-server
+    command: 
+      http-server
 
 vscode:
   extensions:
