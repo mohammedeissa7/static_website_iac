@@ -7,8 +7,9 @@ provider "aws" {
 
 
 module "terrahouce_aws" {
-  source = "/workspace/terraform-beginner-bootcamp-2023/module/terrahouce_aws "
+  source = "/workspace/static_website_iac/module/terrahouce_aws "
   bucket_name = var.bucket_name
   index_html_filepath = var.index_html_filepath
   error_html_filepath = var.error_html_filepath
+  content_version = var.content_version
 }
